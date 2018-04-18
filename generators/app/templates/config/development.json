@@ -1,0 +1,20 @@
+{
+  "coverage": {
+    "port": 5010
+  },
+  "api": {
+<% if (apollo) { %>
+    "graphqlPath": "/graphql",
+<% } %>
+    "host": "localhost",
+    "port": 4000,
+    "protocol": "http"
+  },
+  "server": {
+    "forceSSL": "false",
+    "port": 3000
+  },
+  "styleguide": {
+    "port": 5000
+  }
+}

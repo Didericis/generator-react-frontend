@@ -1,0 +1,21 @@
+.main { 
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: calc(100% - 2px);
+}
+
+main {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+}
+
+header > * {
+  flex: 1;
+}

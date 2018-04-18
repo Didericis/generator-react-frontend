@@ -1,0 +1,6 @@
+Not Found
+
+
+```js
+<NotFound />
+```

@@ -1,0 +1,50 @@
+@value colors: "styles/colors.css";
+@value base01, base3 from colors;
+
+@font-face {
+  font-family: 'Economica';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/Economica-Regular.ttf') format('truetype');
+}
+
+:global(main), :global(input), :global(button) {
+  font-family: 'Economica', sans-serif;
+}
+
+:global(main) {
+  display: flex;
+  padding: 2rem;
+}
+
+:global(main > div) {
+  width: 100%;
+}
+
+:global(body) {
+  color: base3;
+  margin: 0;
+  font-size: 1rem;
+}
+
+:global(button) {
+  color: base3;
+}
+
+:global(input), :global(button) {
+  font-size: 1rem;
+}
+
+:global(#app) {
+  align-items: center;
+  background-color: black;
+  color: base3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+:global(::-webkit-scrollbar) {
+  display: none;
+}

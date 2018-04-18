@@ -1,0 +1,4 @@
+# Root query
+type Query {
+  message: String
+}

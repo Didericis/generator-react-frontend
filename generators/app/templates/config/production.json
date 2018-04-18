@@ -1,0 +1,9 @@
+{
+  "api": {
+    "protocol": "https"
+  },
+  "server": {
+    "forceSSL": "true",
+    "port": 3000
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "<%= appname %>",
+  "version": "0.1.0",
+  "description": "",
+  "scripts": {
+    "build": "webpack",
+    "coverage": "node coverage_server.js",
+    "start": "node server",
+    "start:watch": "nodemon server --watch server --watch webpack.config.js",
+<% if (styleguide) { %>
+    "styleguide": "styleguidist server",
+<% } %>
+    "test:client": "karma start --single-run",
+    "test:client:watch": "karma start"
+  }
+}

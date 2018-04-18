@@ -1,0 +1,26 @@
+{
+  "name": "generator-react-frontend",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -u bdd-lazy-var/global"
+  },
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "author": "didericis",
+  "license": "ISC",
+  "dependencies": {
+    "fs-readdir-recursive": "^1.1.0",
+    "lodash": "^4.17.5",
+    "yeoman-generator": "^2.0.4"
+  },
+  "devDependencies": {
+    "bdd-lazy-var": "^2.2.3",
+    "chai": "^4.1.2",
+    "mocha": "^5.1.0",
+    "yeoman-assert": "^3.1.1",
+    "yeoman-test": "^1.7.0"
+  }
+}
