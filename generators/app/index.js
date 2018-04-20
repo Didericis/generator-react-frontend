@@ -109,7 +109,7 @@ module.exports = class extends Generator {
     const devDeps = [
       'babel-core', 'babel-loader', 'babel-polyfill', 'babel-preset-es2015',
       'babel-preset-react', 'babel-preset-stage-2', 'whatwg-fetch', 'css-hot-loader',
-      'mini-css-extract-plugin', 'circular-dependency-plugin', 'nodemon',
+      'mini-css-extract-plugin', 'circular-dependency-plugin',
       'webpack', 'webpack-hot-middleware', 'webpack-dev-middleware', 'css-loader',
       'karma', 'bdd-lazy-var', 'chai', 'enzyme', 'enzyme-adapter-react-16',
       'mocha', 'sinon', 'karma-mocha', 'karma-coverage-istanbul-reporter',
