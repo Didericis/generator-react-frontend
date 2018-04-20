@@ -39,7 +39,7 @@ To monitor test coverage results: `npm coverage` (NOTE: requires tests to be run
 
 To run the styleguide (if option was selected): `npm styleguide`
 
-### Folder Structure
+### Folder atructure
 
 By default, specs, css, and styleguide examples sit within the same folder as the components they relate to.
 
