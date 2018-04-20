@@ -42,6 +42,16 @@ module.exports = class extends Generator {
       message : 'Folder name',
       default : `${_.snakeCase(this.options.appname)}`, 
     }, {
+      type    : 'input',
+      name    : 'apiHost',
+      message : 'Development api host (optional)',
+      default : 'localhost'
+    }, {
+      type    : 'input',
+      name    : 'apiPort',
+      message : 'Development api port (optional)',
+      default : '4000'
+    }, {
       type: 'confirm',
       name: 'baseStyles',
       message: 'Include a base set of styles?'
@@ -61,6 +71,8 @@ module.exports = class extends Generator {
       this.appname = this.options.appname;
       this.destinationRoot(path.join(process.cwd(), answers.folder));
       this.config.set('apollo', answers.apollo);
+      this.config.set('apiHost', answers.apiHost);
+      this.config.set('apiPort', answers.apiPort);
       this.config.set('accounts', answers.accounts);
       this.config.set('baseStyles', answers.baseStyles);
       this.config.set('styleguide', answers.styleguide);
@@ -78,6 +90,8 @@ module.exports = class extends Generator {
     const vars = {
       accounts: this.config.get('accounts'),
       apollo: this.config.get('apollo'),
+      apiHost: this.config.get('apiHost'),
+      apiPort: this.config.get('apiPort'),
       appname: this.appname,
       baseStyles: this.config.get('baseStyles'),
       graphqlSchemaPath: this.config.get('graphqlSchemaPath'),

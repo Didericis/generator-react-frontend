@@ -6,8 +6,8 @@
 <% if (apollo) { %>
     "graphqlPath": "/graphql",
 <% } %>
-    "host": "localhost",
-    "port": 4000,
+    "host": "<%= apiHost %>",
+    "port": "<%= apiPort %>",
     "protocol": "http"
   },
   "server": {
